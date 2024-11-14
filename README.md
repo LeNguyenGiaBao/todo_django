@@ -18,7 +18,7 @@ pip install -r requirements.txt
 ## Setup
 1. Clone the repository
     ```bash
-    git clone <repository_url>
+    git clone https://github.com/LeNguyenGiaBao/todo_django.git
     cd TodoAPI
     ```
 
