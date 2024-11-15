@@ -19,7 +19,7 @@ pip install -r requirements.txt
 1. Clone the repository
     ```bash
     git clone https://github.com/LeNguyenGiaBao/todo_django.git
-    cd TodoAPI
+    cd todo_django
     ```
 
 2. Install the requirements
@@ -32,6 +32,7 @@ pip install -r requirements.txt
 Run the following command to apply database migrations and set up your database schema:
 
     ```bash
+    cd TodoAPI
     python manage.py migrate
     ```
 
