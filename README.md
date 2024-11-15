@@ -22,27 +22,47 @@ pip install -r requirements.txt
     cd TodoAPI
     ```
 
-2. Setup the database
+2. Install the requirements
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+3. Setup the database
 Run the following command to apply database migrations and set up your database schema:
 
     ```bash
     python manage.py migrate
     ```
 
-3. Create a superuser (optional)
+4. Create a superuser (optional)
 You can create a superuser to access the Django admin panel:
 
     ```bash
     python manage.py createsuperuser
     ```
 
-4. Running the development server
+5. Running the development server
 To start the development server, run:
 
     ```bash
     python manage.py runserver
     ```
 Your API will be accessible at http://127.0.0.1:8000/.
+
+
+### Using Docker to deploy
+
+Build Docker image
+```bash
+docker-compose build
+```
+
+Deploy using docker
+
+```bash
+docker-compose up -d
+```
 
 ## JWT Authentication
 To interact with the API, you will need to obtain a JWT token. You can get a token by logging in with the user credentials via the auth endpoint.
